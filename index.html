@@ -1,81 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dinh Phuong Blog</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/menu.css">
 </head>
+
 <body>
     <header>
-        <h1>
-            Blog of Dinh Phuong
-        </h1>
-        <p>
-            Welcome to my persional blog!
-        </p>
+        <nav>
+            <ul>
+                <li><a href="index.html" title="home">Home</a></li>
+                <li><a href="html-editor.html" title="html-extention">Công cụ soạn thảo</a></li>
+                <li><a href="#" title="1C">1C</a>
+                    <!-- menu con sổ xuống cấp 1 -->
+                    <ul>
+                        <li><a href="#" title="1C-Topic">Chủ đề 1C</a></li>
+                        <li><a href="#" title="1C-Topic">Chủ đề 1C</a></li>
+                        <li>
+                            <a href="#" title="1C-Topic">Chủ đề 1C</a>
+                            <!-- menu con sổ ngang cấp 2 -->
+                            <ul>
+                                <li><a href="#" title="1C-Article">Bài viết 1C</a></li>
+                                <li><a href="#" title="1C-Article">Bài viết 1C</a></li>
+                                <li><a href="#" title="1C-Article">Bài viết 1C</a></li>
+                                <li><a href="#" title="1C-Article">Bài viết 1C</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#" title="Tricks">Thủ thuật</a>
+                    <ul>
+                        <li><a href="#" title="Server">Máy chủ</a></li>
+                        <li><a href="#" title="Domain">Tên miền</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li>
-                <a href="#home">
-                    Home
-                </a>
-            </li>
-            <li>
-                <a href="#topic1">
-                    Topic 1
-                </a>
-            </li>
-            <li>
-                <a href="#topic2">
-                    Topic 2
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <section id="topic1">
-        <h2>Topic 1</h2>
-        <article>
-            <h3>
-                Article 1 of Topic 1
-            </h3>
-            <p>
-                Content of Article 1
-            </p>
-        </article>
-        <article>
-            <h3>
-                Article 2 of Topic 1
-            </h3>
-            <p>
-                Content of Article 2
-            </p>
-        </article>
-    </section>
-    <section id="topic2">
-        <h2>Topic 2</h2>
-        <article>
-            <h3>
-                Article 1 of Topic 2
-            </h3>
-            <p>
-                Content of Article 1
-            </p>
-        </article>
-        <article>
-            <h3>
-                Article 2 of Topic 2
-            </h3>
-            <p>
-                Content of Article 2
-            </p>
-        </article>
+    <section id="about">
+        <iframe src="about.html" width="100%" height="350px" style="border: none;"></iframe>
     </section>
     <footer>
         <p>
             &copy; 2024 Blog of Dinh Phuong. All rights reserved.
         </p>
     </footer>
+    <script src="js/menu.js"></script>
 </body>
+
 </html>
